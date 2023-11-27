@@ -7,7 +7,8 @@
     height: 50px;
     border: 3px solid #AAAAAA;
     cursor: pointer;
-    opacity: 0.2;
+    /* 透明度0.2-0.5 */
+    opacity: 0.5; 
     transition: border 2s, opacity 1s;
   }
   .thumb:hover {
