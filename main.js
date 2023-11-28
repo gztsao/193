@@ -77,16 +77,11 @@ let ary = [
       let s_year   = ary[i].year;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
-//test
-      let aaa='';
-      aaa = '<button class="contentBtn-aaa" id="btn' + i + '">' + s_title + '</button>';
-      bbb = '<img src="' + s_poster + '" class="thumb-Btn" id="pic' + i + '">';
-      // ccc+= aaa + bbb; 
-      document.getElementById("zzz").innerHTML= bbb;
-      console.log(aaa);
-      console.log(bbb);
-      // console.log(ccc);
-      
+//test測試區
+
+
+//test測試區
+
       //依照陣列的ID產生生成相對應的縮圖
 
       // 產生每一個按鈕的html格式
@@ -97,9 +92,14 @@ let ary = [
 
     }
     document.getElementById('content').innerHTML = str;
-    //依照陣列的ID產生生成相對應的按鈕
+    //依照陣列的ID(content)產生生成相對應的按鈕
     document.getElementById('thumb').innerHTML = thumb;
-    //依照陣列的ID產生生成相對應的縮圖
+    //依照陣列的ID(thumb)產生生成相對應的縮圖
+
+    //test測試區
+    document.getElementById("zzz").innerHTML = ary;
+    console.log(ary);
+    //依照陣列的ID(zzz)產生生成相對應html
 
     // (2) 定義按鈕的事件
     for(let i=0; i<ary.length; i++) {
