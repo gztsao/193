@@ -1,5 +1,25 @@
+/* 按鈕大框 */
 #content{
-  border: 2px solid #aaa;
+  /* bd-按鈕大框*/
+  border: 1px solid #aaa;
+  display: flex;
+  flex-wrap:wrap; /*//超過自動換行(重要:預設自動壓縮寬度不換行)  */
+  gap:5px; /*//間隔10px */
+/*      justify-content: center;   //置中 */
+/*  align-items: center;  //副軸置中 */
+}
+/* 個別按鈕 */
+.contentBtn{
+  /* 寬度最寬300px適合手機 */
+  width: 300px;
+  /* max-width: 300px; */
+  /* 高度50px與縮圖同高 */
+  height: 50px; 
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+   
+  
 }
 #pic {
     width: 200px;

@@ -48,9 +48,9 @@ let ary = [
     //陣列內容ary[0,1,..5]為網址將網址存入變數pic中將來使用
     pic = s_poster; //大圖網址
     url = s_url; //網站網址
-    console.log(idx); //陣列位置
-    console.log(pic); //大圖網址
-    console.log(url); //網站網址
+    console.log('陣列位置 ' + idx); //陣列位置
+    console.log('大圖網址 ' + pic); //大圖網址
+    console.log('網站網址 ' + url); //網站網址
     
     render(); //進入產生大圖函數
   }
@@ -74,16 +74,17 @@ let ary = [
       let s_year   = ary[i].year;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
-      str += '<button id="btn' + i + '">' + s_title + '</button>';
+      str += '<button class="contentBtn" id="btn' + i + '">' + s_title + '</button>';
       thumb += '<img src="' + s_poster + '" class="thumb" id="pic' + i + '">';
       //按鈕的數量依照陣列的長度產生想同數量的按鈕
     }
     document.getElementById('content').innerHTML = str;
     //依照陣列的ID產生生成相對應的按鈕
     document.getElementById('thumb').innerHTML = thumb;
-    
+    //依照陣列的ID產生生成相對應的縮圖
+
     // (2) 定義按鈕的事件
-    for(let i=1; i<ary.length; i++) {
+    for(let i=0; i<ary.length; i++) {
       let btn_id = 'btn' + i;
       let pic_id = 'pic' + i;
       document.getElementById(btn_id).onclick = function(){ change(i); }; 
@@ -92,7 +93,7 @@ let ary = [
     }
       
     // (3) 第一次執行
-    //使用陣列中第0個網址產生預設圖
+    //使用陣列ary[i]中第i個圖片網址產生預設大圖
     change(0);
   }
   
