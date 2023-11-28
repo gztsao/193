@@ -1,5 +1,8 @@
+#content{
+  border: 2px solid #aaa;
+}
 #pic {
-    width: 300px;
+    width: 200px;
   }
   
   .thumb {
@@ -8,8 +11,10 @@
     border: 3px solid #AAAAAA;
     cursor: pointer;
     /* 透明度0.2-0.5 */
-    opacity: 0.5; 
+    opacity: 0.5;
+    /* CSS 動畫轉場 增加框線  */
     transition: border 2s, opacity 1s;
+    /* transition: border 1s, opacity 0.3s; */
   }
   .thumb:hover {
     border: 3px solid red;

@@ -1,5 +1,5 @@
 
-// 這是陣列放網址圖片用使用[0]為預設圖片
+// 這是陣列放網址圖片用使用ary[0]為預設圖片
 // 設定公用變數 (重要的資料)
 let ary = [
     {title:'(1)駭客任務', 
@@ -26,7 +26,12 @@ let ary = [
     year:9999,
     poster:'./img/google_logo.svg',
     url:'https://www.google.com', 
-   },
+    },
+    {title:'Gmail',
+    year:9999,
+    poster:'./img/gmail_logo.svg',
+    url:'https://gmail.google.com', 
+    },
   ];
 
   // 選擇的圖片的按鈕id btn_id[1,2,3...] 存入公用變數中將來可用
@@ -55,6 +60,7 @@ let ary = [
     document.getElementById('pic').src = pic;//依照陣列中位置不同存放的不同的網址產生不同的圖片
     // id="url"的位置更新網站網址
     document.getElementById('url').href = url;//依照陣列中位置不同存放的不同的網站網址  
+    document.getElementById('url.old').href = url;//依照陣列中位置不同存放的不同的網站網址  
   }
   
   function init() {
