@@ -34,24 +34,27 @@ let ary = [
   
   // 定義各函式
   function change(idx) {
-    // 依傳入參數設定變數資料
-    let s_title  = ary[idx].title;
-    let s_year   = ary[idx].year;
-    let s_poster = ary[idx].poster;
-    let s_url = ary[idx].url;
+    // 依點選畫面i=0變化陣列位置[ary,0,1,2...5]傳入參數變數資料
+    let s_title  = ary[idx].title; //標題
+    let s_year   = ary[idx].year; //發行年度
+    let s_poster = ary[idx].poster; //圖片路經
+    let s_url = ary[idx].url; //說明網址
     
-    //陣列內容ary[1,2,3]為網址將網址存入變數pic中將來使用
-    pic = s_poster;
-    // console.log(idx);
-    // console.log(pic);
+    //陣列內容ary[0,1,..5]為網址將網址存入變數pic中將來使用
+    pic = s_poster; //大圖網址
+    url = s_url; //網站網址
+    console.log(idx); //陣列位置
+    console.log(pic); //大圖網址
+    console.log(url); //網站網址
     
-    render();
+    render(); //進入產生大圖函數
   }
   
-  function render() {
-    // 更新畫面
+  function render() { //產生大圖函數
+    // id="pic"的位置更新大圖畫面
     document.getElementById('pic').src = pic;//依照陣列中位置不同存放的不同的網址產生不同的圖片
-    //網頁上id="pic"的位置依照網址產生大圖  
+    // id="url"的位置更新網站網址
+    document.getElementById('url').href = url;//依照陣列中位置不同存放的不同的網站網址  
   }
   
   function init() {
