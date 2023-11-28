@@ -56,11 +56,14 @@ let ary = [
   }
   
   function render() { //產生大圖函數
-    // id="pic"的位置更新大圖畫面
-    document.getElementById('pic').src = pic;//依照陣列中位置不同存放的不同的網址產生不同的圖片
-    // id="url"的位置更新網站網址
-    document.getElementById('url').href = url;//依照陣列中位置不同存放的不同的網站網址  
-    document.getElementById('url.old').href = url;//依照陣列中位置不同存放的不同的網站網址  
+    // 條件為id="pic"的位置更新大圖ary[idx].poster(大圖網址)畫面
+    document.getElementById('pic').src = pic;
+
+    // 條件為id="url"的位置更新網站網址
+    document.getElementById('url').href = url;
+
+    // 條件為id="url.old"的位置更新網站網址
+    document.getElementById('url.old').href = url;
   }
   
   function init() {
@@ -74,9 +77,24 @@ let ary = [
       let s_year   = ary[i].year;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
+//test
+      let aaa='';
+      aaa = '<button class="contentBtn-aaa" id="btn' + i + '">' + s_title + '</button>';
+      bbb = '<img src="' + s_poster + '" class="thumb-Btn" id="pic' + i + '">';
+      // ccc+= aaa + bbb; 
+      document.getElementById("zzz").innerHTML= bbb;
+      console.log(aaa);
+      console.log(bbb);
+      // console.log(ccc);
+      
+      //依照陣列的ID產生生成相對應的縮圖
+
+      // 產生每一個按鈕的html格式
       str += '<button class="contentBtn" id="btn' + i + '">' + s_title + '</button>';
-      thumb += '<img src="' + s_poster + '" class="thumb" id="pic' + i + '">';
-      //按鈕的數量依照陣列的長度產生想同數量的按鈕
+      // console.log(str);
+      // 產生每一個縮圖的html格式
+      thumb += '<img src="' + s_poster + '" class="thumb-Btn" id="pic' + i + '">';
+
     }
     document.getElementById('content').innerHTML = str;
     //依照陣列的ID產生生成相對應的按鈕
