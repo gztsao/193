@@ -72,13 +72,15 @@ let ary = [
   // (1) 依陣列數量產生相同數量的按鈕(陣列中10個圖(網址)產生10個按鈕)
     let str = '';
     let thumb = '';
+    let ccc=''; //測試用
+
     for(let i=0; i<ary.length; i++) {
       let s_title  = ary[i].title;
       let s_year   = ary[i].year;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
 //test測試區
-
+ccc = ccc + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
 
 //test測試區
 
@@ -97,17 +99,22 @@ let ary = [
     //依照陣列的ID(thumb)產生生成相對應的縮圖
 
     //test測試區
-    document.getElementById("zzz").innerHTML = ary;
-    console.log(ary);
+    document.getElementById("zzz").innerHTML = ccc;
+    // console.log(ccc);
     //依照陣列的ID(zzz)產生生成相對應html
 
     // (2) 定義按鈕的事件
     for(let i=0; i<ary.length; i++) {
       let btn_id = 'btn' + i;
       let pic_id = 'pic' + i;
+      // let zzz-btn_id = 'btn' + i;
+      // let zzz-pic_id = 'pic' + i;
       document.getElementById(btn_id).onclick = function(){ change(i); }; 
       document.getElementById(pic_id).onclick = function(){ change(i); };
-      //點選按鈕(btn_id)到函數change()中去更改圖片 
+      //點選按鈕(btn_id)到函數change()中去更改圖片
+      // document.getElementById(zzz-btn_id).onclick = function(){ change(i); }; 
+      // document.getElementById(zzz-pic_id).onclick = function(){ change(i); };  
+      
     }
       
     // (3) 第一次執行
