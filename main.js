@@ -6,32 +6,38 @@ let ary = [
     {title:'Google',
     kind:'應用',
     poster:'./img/google_logo.svg',
-    url:'https://www.google.com', 
+    url:'https://www.google.com',
+    notes: 'none', 
     },
     {title:'Gmail',
     kind:'應用',
     poster:'./img/gmail_logo.svg',
-    url:'https://gmail.google.com', 
+    url:'https://gmail.google.com',
+    notes: 'none', 
     },
     {title:'YouTube',
     kind:'應用',
     poster:'./img/youtube_logo.svg',
-    url:'https://www.youtube.com/', 
+    url:'https://www.youtube.com/',
+    notes: 'none', 
     }, 
     {title:'GitHub',
     kind:'教學',
     poster:'./img/github_logo.svg',
-    url:'https://github.com/', 
+    url:'https://github.com/',
+    notes: 'none', 
     }, 
     {title:'台新銀行網路銀行',
     kind:'金融',
     poster:'./img/taishin_logo.svg',
-    url:'https://my.taishinbank.com.tw/', 
+    url:'https://my.taishinbank.com.tw/',
+    notes: 'none', 
     }, 
     {title:'SpeedTest網路測速',
     kind:'偵錯',
     poster:'./img/speedtest_logo.png',
-    url:'https://www.speedtest.net/', 
+    url:'https://www.speedtest.net/',
+    notes: 'none', 
     },
 
  /**
@@ -58,6 +64,7 @@ let ary = [
     let s_kind   = ary[idx].kind; //發行年度
     let s_poster = ary[idx].poster; //圖片路經
     let s_url = ary[idx].url; //說明網址
+    let s_notes = ary[idx].notes; //註解說明
     
     //陣列內容ary[0,1,..到最後一筆資料]為陣列資料分別存入變數pic與變數url中給程式使用
     pic = s_poster; //大圖網址
@@ -93,6 +100,7 @@ let ary = [
       let s_kind   = ary[i].kind;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
+      let s_notes = ary[i].notes;
 
 //bookmark 雲端書籤html格式產生的方式
 
