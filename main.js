@@ -97,9 +97,9 @@ let ary = [
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
 //bookmark測試區
-// bookmark = bookmark + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
-// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
-bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button></div>'; 
+// bookmark = bookmark + '<img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
+// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
+bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>'; 
 
 
 //bookmark測試區
@@ -119,31 +119,31 @@ bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" cl
     //在網頁位置ID為thumb的地方依照thumb的字串內容產生生成相對應的縮圖
 
     //bookmark測試區
-    document.getElementById("zzz").innerHTML = bookmark;
+    document.getElementById("main").innerHTML = bookmark;
     // console.log(bookmark);
-    //依照陣列的ID(zzz)產生生成相對應html
+    //依照陣列的ID(main)產生生成相對應html
 
     // (2) 定義按鈕的事件
     for(let i=0; i<ary.length; i++) {
-      let btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='zzz-'+'btn(i)'使用
-      let pic_id = 'pic' + i; //bookmark 使用變數(如btn5)定位id='zzz-'+'btn(i)'使用
-      let zzz_btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='zzz-'+'btn(i)'使用
-      let zzz_pic_id = 'pic' + i; //bookmark 使用變數
+      let btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='main-'+'btn(i)'使用
+      let pic_id = 'pic' + i; //bookmark 使用變數(如btn5)定位id='main-'+'btn(i)'使用
+      let main_btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='main-'+'btn(i)'使用
+      let main_pic_id = 'pic' + i; //bookmark 使用變數
     
       console.log(btn_id);
       
 
-      // let zzz-btn_id = 'btn' + i; //錯誤變數不可有'-'減號
-      // let zzz-pic_id = 'pic' + i; //錯誤變數不可有'-'減號
-      console.log(zzz_btn_id);
+      // let main-btn_id = 'btn' + i; //錯誤變數不可有'-'減號
+      // let main-pic_id = 'pic' + i; //錯誤變數不可有'-'減號
+      console.log(main_btn_id);
 
       document.getElementById(btn_id).onclick = function(){ change(i); }; 
       document.getElementById(pic_id).onclick = function(){ change(i); };
       //點選按鈕(btn_id)到函數change()中去更改圖片
-       document.getElementById('zzz-'+btn_id).onclick = function(){ change(i); }; 
-       document.getElementById('zzz-'+pic_id).onclick = function(){ change(i); };  
-      //  document.getElementById(zzz_btn_id).onclick = function(){ change(i); }; 
-      //  document.getElementById(zzz_pic_id).onclick = function(){ change(i); };  
+       document.getElementById('main-'+btn_id).onclick = function(){ change(i); }; 
+       document.getElementById('main-'+pic_id).onclick = function(){ change(i); };  
+      //  document.getElementById(main_btn_id).onclick = function(){ change(i); }; 
+      //  document.getElementById(main_pic_id).onclick = function(){ change(i); };  
       
     }
       
