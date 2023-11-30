@@ -17,7 +17,12 @@ let ary = [
     kind:'應用',
     poster:'./img/youtube_logo.svg',
     url:'https://www.youtube.com/', 
-    },    
+    }, 
+    {title:'GitHub',
+    kind:'教學',
+    poster:'./img/github_logo.svg',
+    url:'https://github.com/', 
+    }, 
 /**
  * ary[] 單一資料欄位功能說明。
  *  {title:'Gmail', //欄位
