@@ -52,7 +52,7 @@ let ary = [
   ];
 
   // 選擇的圖片的按鈕id btn_id[1,2,3...] 存入公用變數中將來可用
-  let pic = '';  // 選擇的圖
+  let pic = '';  // 大圖網址
   
   // 定義各函式
   function change(idx) {
@@ -86,26 +86,24 @@ let ary = [
   function init() {
 
   // 初始設定及功能執行
-  // (1) 依陣列數量產生相同數量的按鈕(陣列中10個圖(網址)產生10個按鈕)
-    let str = '';
-    let thumb = '';
-    let bookmark =''; //bookmark測試用
+  // (1) 依陣列數量產生相同數量的按鈕(陣列中10筆資料依序產生10個(縮圖)產生10個(書籤))
+    let str = '';     //產生全部按鈕html格式使用的字串
+    let thumb = '';   //產生縮圖html格式使用的字串
+    let bookmark =''; //bookmark書籤html格式產生使用的字串
 
     for(let i=0; i<ary.length; i++) {
       let s_title  = ary[i].title;
       let s_year   = ary[i].year;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
-//bookmark測試區
-// bookmark = bookmark + '<img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
+
+//bookmark 雲端書籤html格式產生的方式
 // bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
-bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>'; 
+// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>'; 
+bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url.old" href="#" target="_blank" >前往外點</a></div>'; 
 
-
-//bookmark測試區
 
       //依照陣列的ID[0,1,...-到最後一筆]產生生成相對應的縮圖
-
       // 產生每一個按鈕的html格式
       str += '<button class="contentBtn" id="btn' + i + '">' + s_title + '</button>';
       // console.log(str);
@@ -138,8 +136,7 @@ bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" cl
       //點選按鈕(btn_id)到函數change()中去更改圖片
        document.getElementById(main_btn_id).onclick = function(){ change(i); }; 
        document.getElementById(main_pic_id).onclick = function(){ change(i); };  
-      //  document.getElementById(main_btn_id).onclick = function(){ change(i); }; 
-      //  document.getElementById(main_pic_id).onclick = function(){ change(i); };  
+      //點選按鈕(id=main-btn'x' 例如main-btn5)到函數change()中去更改圖片
       
     }
       
