@@ -10,6 +10,7 @@
   gap:5px; /*//間隔10px */
 /*      justify-content: center;   //置中 */
 /*  align-items: center;  //副軸置中 */
+display:none;  //不顯示畫面
 }
 /* 個別按鈕 */
 .contentBtn{
@@ -29,7 +30,10 @@
 #pic {
     width: 200px;
   }
-  
+#thumb{
+  display:none;  //不顯示畫面
+} 
+
   .thumb-Btn {
     width: 50px;
     height: 50px;

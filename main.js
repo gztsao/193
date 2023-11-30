@@ -125,23 +125,19 @@ bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" cl
 
     // (2) 定義按鈕的事件
     for(let i=0; i<ary.length; i++) {
-      let btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='main-'+'btn(i)'使用
-      let pic_id = 'pic' + i; //bookmark 使用變數(如btn5)定位id='main-'+'btn(i)'使用
-      let main_btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='main-'+'btn(i)'使用
-      let main_pic_id = 'pic' + i; //bookmark 使用變數
+      let btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='btn5'使用
+      let pic_id = 'pic' + i; //bookmark 使用變數(如btn5)定位id='pic5'使用
+      let main_btn_id = 'main-btn' + i; //bookmark 使用變數(如main+btn5)定位id='main-btn5'使用
+      let main_pic_id = 'main-pic' + i; //bookmark 使用變數(如main+pic5)定位id='main-pic5'使用
     
-      console.log(btn_id);
-      
-
-      // let main-btn_id = 'btn' + i; //錯誤變數不可有'-'減號
-      // let main-pic_id = 'pic' + i; //錯誤變數不可有'-'減號
-      console.log(main_btn_id);
+      console.log(btn_id); //查看btn_id內容
+      console.log(main_btn_id); //查看main-btn_id內容
 
       document.getElementById(btn_id).onclick = function(){ change(i); }; 
       document.getElementById(pic_id).onclick = function(){ change(i); };
       //點選按鈕(btn_id)到函數change()中去更改圖片
-       document.getElementById('main-'+btn_id).onclick = function(){ change(i); }; 
-       document.getElementById('main-'+pic_id).onclick = function(){ change(i); };  
+       document.getElementById(main_btn_id).onclick = function(){ change(i); }; 
+       document.getElementById(main_pic_id).onclick = function(){ change(i); };  
       //  document.getElementById(main_btn_id).onclick = function(){ change(i); }; 
       //  document.getElementById(main_pic_id).onclick = function(){ change(i); };  
       
