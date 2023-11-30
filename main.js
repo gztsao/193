@@ -62,7 +62,7 @@ let ary = [
     let s_poster = ary[idx].poster; //圖片路經
     let s_url = ary[idx].url; //說明網址
     
-    //陣列內容ary[0,1,..5]為網址將網址存入變數pic中將來使用
+    //陣列內容ary[0,1,..到最後一筆資料]為陣列資料分別存入變數pic與變數url中給程式使用
     pic = s_poster; //大圖網址
     url = s_url; //網站網址
     console.log('陣列位置 ' + idx); //陣列位置
@@ -89,19 +89,21 @@ let ary = [
   // (1) 依陣列數量產生相同數量的按鈕(陣列中10個圖(網址)產生10個按鈕)
     let str = '';
     let thumb = '';
-    let ccc=''; //測試用
+    let ccc=''; //bookmark測試用
 
     for(let i=0; i<ary.length; i++) {
       let s_title  = ary[i].title;
       let s_year   = ary[i].year;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
-//test測試區
-ccc = ccc + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
+//bookmark測試區
+// ccc = ccc + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
+ccc = ccc + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
 
-//test測試區
 
-      //依照陣列的ID產生生成相對應的縮圖
+//bookmark測試區
+
+      //依照陣列的ID[0,1,...-到最後一筆]產生生成相對應的縮圖
 
       // 產生每一個按鈕的html格式
       str += '<button class="contentBtn" id="btn' + i + '">' + s_title + '</button>';
@@ -115,7 +117,7 @@ ccc = ccc + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '"
     document.getElementById('thumb').innerHTML = thumb;
     //在網頁位置ID為thumb的地方依照thumb的字串內容產生生成相對應的縮圖
 
-    //test測試區
+    //bookmark測試區
     document.getElementById("zzz").innerHTML = ccc;
     // console.log(ccc);
     //依照陣列的ID(zzz)產生生成相對應html

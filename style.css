@@ -21,7 +21,7 @@
   gap: 4px;
   margin: 2px 2px 2px 2px;
    
-  
+ 
 }
 #pic {
     width: 200px;
@@ -42,4 +42,18 @@
     border: 3px solid red;
   
     opacity: 1.0;
+  }
+  /* 書籤列 */
+  .bookmark-item{
+    border: 1px solid red;
+  /* 寬度最寬300px適合手機 */
+  width: 400px;
+  /* max-width: 300px; */
+  /* 高度50px與縮圖同高 */
+  height: 100px; 
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px;
+  gap: 4px;
+  margin: 2px 2px 2px 2px;
   }
