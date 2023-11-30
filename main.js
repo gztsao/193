@@ -32,6 +32,23 @@ let ary = [
     poster:'./img/gmail_logo.svg',
     url:'https://gmail.google.com', 
     },
+    {title:'YouTube',
+    year:9999,
+    poster:'./img/youtube_logo.svg',
+    url:'https://www.youtube.com/', 
+    },    
+/**
+ * ary[] 單一資料欄位功能說明。
+ *  {title:'Gmail', //欄位
+ *   year:9999,     //登記年度
+ *   poster:'./img/gmail_logo.svg',  //logo
+ *   url:'https://gmail.google.com', //網站網址
+ *  },
+ * 
+ * 新增資料時須有完整的{}內的資料並且結尾要加上,
+ *
+ */
+
   ];
 
   // 選擇的圖片的按鈕id btn_id[1,2,3...] 存入公用變數中將來可用
@@ -96,7 +113,7 @@ ccc = ccc + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '"
     document.getElementById('content').innerHTML = str;
     //依照陣列的ID(content)產生生成相對應的按鈕
     document.getElementById('thumb').innerHTML = thumb;
-    //依照陣列的ID(thumb)產生生成相對應的縮圖
+    //在網頁位置ID為thumb的地方依照thumb的字串內容產生生成相對應的縮圖
 
     //test測試區
     document.getElementById("zzz").innerHTML = ccc;
