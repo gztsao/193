@@ -8,7 +8,7 @@ a {
 /* 按鈕大框 */
 #content{
   /* bd-按鈕大框*/
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
   display: flex;
   flex-wrap:wrap; /*//超過自動換行(重要:預設自動壓縮寬度不換行)  */
   gap:5px; /*//間隔10px */
