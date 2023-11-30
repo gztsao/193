@@ -1,3 +1,6 @@
+*{
+  margin: 0;padding: 0;
+}
 /* 按鈕大框 */
 #content{
   /* bd-按鈕大框*/

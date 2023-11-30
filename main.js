@@ -89,7 +89,7 @@ let ary = [
   // (1) 依陣列數量產生相同數量的按鈕(陣列中10個圖(網址)產生10個按鈕)
     let str = '';
     let thumb = '';
-    let ccc=''; //bookmark測試用
+    let bookmark =''; //bookmark測試用
 
     for(let i=0; i<ary.length; i++) {
       let s_title  = ary[i].title;
@@ -97,8 +97,9 @@ let ary = [
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
 //bookmark測試區
-// ccc = ccc + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
-ccc = ccc + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
+// bookmark = bookmark + '<img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button>' + '<br></br>'; 
+// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
+bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="zzz-pic' + i + '">' + '<button class="contentBtn" id="zzz-btn' + i + '">' + s_title + '</button></div>'; 
 
 
 //bookmark測試區
@@ -118,15 +119,15 @@ ccc = ccc + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb
     //在網頁位置ID為thumb的地方依照thumb的字串內容產生生成相對應的縮圖
 
     //bookmark測試區
-    document.getElementById("zzz").innerHTML = ccc;
-    // console.log(ccc);
+    document.getElementById("zzz").innerHTML = bookmark;
+    // console.log(bookmark);
     //依照陣列的ID(zzz)產生生成相對應html
 
     // (2) 定義按鈕的事件
     for(let i=0; i<ary.length; i++) {
-      let btn_id = 'btn' + i;
-      let pic_id = 'pic' + i;
-      let zzz_btn_id = 'btn' + i; //bookmark 使用變數定位id(如btn5)使用
+      let btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='zzz-'+'btn(i)'使用
+      let pic_id = 'pic' + i; //bookmark 使用變數(如btn5)定位id='zzz-'+'btn(i)'使用
+      let zzz_btn_id = 'btn' + i; //bookmark 使用變數(如btn5)定位id='zzz-'+'btn(i)'使用
       let zzz_pic_id = 'pic' + i; //bookmark 使用變數
     
       console.log(btn_id);
