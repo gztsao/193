@@ -2,45 +2,26 @@
 // 這是陣列放網址圖片用使用ary[0]為預設圖片
 // 設定公用變數 (重要的資料)
 let ary = [
-    {title:'(1)駭客任務', 
-     year:1993,
-     poster:'https://www.themoviedb.org/t/p/w1280/pEoqbqtLc4CcwDUDqxmEDSWpWTZ.jpg',
-     url:'https://zh.wikipedia.org/zh-tw/%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD', 
-    },
-    {title:'(2)駭客任務：重裝上陣',
-     year:2003,
-     poster:'https://www.themoviedb.org/t/p/w1280/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg',
-     url:'https://zh.wikipedia.org/zh-tw/%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD2%EF%BC%9A%E9%87%8D%E8%A3%85%E4%B8%8A%E9%98%B5', 
-    },
-    {title:'(3)駭客任務完結篇：最後戰役',
-     year:2003,
-     poster:'https://www.themoviedb.org/t/p/w1280/iUtIcqD8ULa7ogi0e51tDBjMqWZ.jpg',
-     url:'https://zh.wikipedia.org/wiki/%E9%BB%91%E5%AE%A2%E5%B8%9D%E5%9B%BD3%EF%BC%9A%E7%9F%A9%E9%98%B5%E9%9D%A9%E5%91%BD', 
-    },
-    {title:'(4)駭客任務：復活',
-     year:2021,
-     poster:'https://www.themoviedb.org/t/p/w1280/8c4a8kE7PizaGQQnditMmI1xbRp.jpg',
-     url:'https://zh.wikipedia.org/wiki/%E9%A7%AD%E5%AE%A2%E4%BB%BB%E5%8B%99%EF%BC%9A%E5%BE%A9%E6%B4%BB', 
-    },
+    
     {title:'Google',
-    year:9999,
+    kind:'應用類',
     poster:'./img/google_logo.svg',
     url:'https://www.google.com', 
     },
     {title:'Gmail',
-    year:9999,
+    kind:'應用類',
     poster:'./img/gmail_logo.svg',
     url:'https://gmail.google.com', 
     },
     {title:'YouTube',
-    year:9999,
+    kind:'應用類',
     poster:'./img/youtube_logo.svg',
     url:'https://www.youtube.com/', 
     },    
 /**
  * ary[] 單一資料欄位功能說明。
  *  {title:'Gmail', //欄位
- *   year:9999,     //登記年度
+ *   kind:'應用類',     //登記年度
  *   poster:'./img/gmail_logo.svg',  //logo
  *   url:'https://gmail.google.com', //網站網址
  *  },
@@ -58,7 +39,7 @@ let ary = [
   function change(idx) {
     // 依點選畫面i=1 or 2 or x 變化陣列位置[ary,0,1,2...5]傳入參數改變'大圖網址(pic)'與'網站網址(url)'
     let s_title  = ary[idx].title; //標題
-    let s_year   = ary[idx].year; //發行年度
+    let s_kind   = ary[idx].kind; //發行年度
     let s_poster = ary[idx].poster; //圖片路經
     let s_url = ary[idx].url; //說明網址
     
@@ -93,7 +74,7 @@ let ary = [
 
     for(let i=0; i<ary.length; i++) {
       let s_title  = ary[i].title;
-      let s_year   = ary[i].year;
+      let s_kind   = ary[i].kind;
       let s_poster = ary[i].poster;
       let s_url = ary[i].url;
 
