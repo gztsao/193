@@ -4,17 +4,17 @@
 let ary = [
     
     {title:'Google',
-    kind:'應用類',
+    kind:'應用',
     poster:'./img/google_logo.svg',
     url:'https://www.google.com', 
     },
     {title:'Gmail',
-    kind:'應用類',
+    kind:'應用',
     poster:'./img/gmail_logo.svg',
     url:'https://gmail.google.com', 
     },
     {title:'YouTube',
-    kind:'應用類',
+    kind:'應用',
     poster:'./img/youtube_logo.svg',
     url:'https://www.youtube.com/', 
     },    
@@ -79,10 +79,11 @@ let ary = [
       let s_url = ary[i].url;
 
 //bookmark 雲端書籤html格式產生的方式
-// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
-// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>'; 
-bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
 
+// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>'; 
+// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url' + i + '"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
+// bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url' + i + '"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
+bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<button class="kindBtn" id="kind-btn' + i + '">' + s_kind + '</button>' + '<a id="url' + i + '"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
 
       //依照陣列的ID[0,1,...-到最後一筆]產生生成相對應的縮圖
       // 產生每一個按鈕的html格式
