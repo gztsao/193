@@ -5,6 +5,12 @@ a {
   /* 隱藏整個網頁的超連結底線 */
   text-decoration:none;
 }
+a:hover {
+  /* 滑鼠移動與動畫效果 */
+  border: 3px solid red;
+  /* 完全不透明 */
+  opacity: 1.0;
+}
 /* 按鈕大框 */
 #content{
   /* bd-按鈕大框*/
@@ -14,7 +20,8 @@ a {
   gap:5px; /*//間隔10px */
 /*      justify-content: center;   //置中 */
 /*  align-items: center;  //副軸置中 */
-display:none;  //不顯示畫面
+/* 不顯示畫面 */
+  display:none;  
 }
 /* 書籤個別按鈕 */
 .contentBtn{
@@ -29,8 +36,6 @@ display:none;  //不顯示畫面
   padding: 8px;
   gap: 4px;
   margin: 2px 2px 2px 2px;
-   
- 
 }
 /* 分類按鈕 */
 .kindBtn{
@@ -45,16 +50,12 @@ display:none;  //不顯示畫面
   padding: 8px;
   gap: 4px;
   margin: 2px 2px 2px 2px;
-   
- 
 }
 #pic {
     width: 200px;
   }
-#thumb{
-  /* display:none;  //不顯示畫面 */
-} 
 
+/* 縮圖按鈕   */
   .thumb-Btn {
     width: 50px;
     height: 50px;
@@ -68,7 +69,7 @@ display:none;  //不顯示畫面
   }
   .thumb-Btn:hover {
     border: 3px solid red;
-  
+  /* 完全不透明 */
     opacity: 1.0;
   }
   /* 書籤列 */
