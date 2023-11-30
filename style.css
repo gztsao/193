@@ -45,15 +45,22 @@
   }
   /* 書籤列 */
   .bookmark-item{
-    border: 1px solid red;
+    border: 1px solid #aaa;
+    border-radius: 5px;
   /* 寬度最寬300px適合手機 */
-  width: 400px;
+  /* width: 400px; */
+  max-width: 400px;
   /* max-width: 300px; */
   /* 高度50px與縮圖同高 */
-  height: 100px; 
+  /* height: 100px; */
+   
   font-size: 16px;
   font-weight: 600;
   padding: 8px;
-  gap: 4px;
   margin: 2px 2px 2px 2px;
+  display: flex;
+  flex-wrap:wrap; /*//超過自動換行(重要:預設自動壓縮寬度不換行)  */
+  gap:5px; /*//間隔10px */
+  justify-content: center;   /*//置中 */
+  align-items: center;  /*//副軸置中 */
   }
