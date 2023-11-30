@@ -56,7 +56,7 @@ let ary = [
   
   // 定義各函式
   function change(idx) {
-    // 依點選畫面i=0變化陣列位置[ary,0,1,2...5]傳入參數變數資料
+    // 依點選畫面i=1 or 2 or x 變化陣列位置[ary,0,1,2...5]傳入參數改變'大圖網址(pic)'與'網站網址(url)'
     let s_title  = ary[idx].title; //標題
     let s_year   = ary[idx].year; //發行年度
     let s_poster = ary[idx].poster; //圖片路經
@@ -72,7 +72,7 @@ let ary = [
     render(); //進入產生大圖函數
   }
   
-  function render() { //產生大圖函數
+  function render() { //傳入變數'pic'與'url'產生1.大圖 與 2.點選後前往的網址
     // 條件為id="pic"的位置更新大圖ary[idx].poster(大圖網址)畫面
     document.getElementById('pic').src = pic;
 
@@ -126,13 +126,23 @@ ccc = ccc + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb
     for(let i=0; i<ary.length; i++) {
       let btn_id = 'btn' + i;
       let pic_id = 'pic' + i;
-      // let zzz-btn_id = 'btn' + i;
-      // let zzz-pic_id = 'pic' + i;
+      let zzz_btn_id = 'btn' + i; //bookmark 使用變數定位id(如btn5)使用
+      let zzz_pic_id = 'pic' + i; //bookmark 使用變數
+    
+      console.log(btn_id);
+      
+
+      // let zzz-btn_id = 'btn' + i; //錯誤變數不可有'-'減號
+      // let zzz-pic_id = 'pic' + i; //錯誤變數不可有'-'減號
+      console.log(zzz_btn_id);
+
       document.getElementById(btn_id).onclick = function(){ change(i); }; 
       document.getElementById(pic_id).onclick = function(){ change(i); };
       //點選按鈕(btn_id)到函數change()中去更改圖片
-      // document.getElementById(zzz-btn_id).onclick = function(){ change(i); }; 
-      // document.getElementById(zzz-pic_id).onclick = function(){ change(i); };  
+       document.getElementById('zzz-'+btn_id).onclick = function(){ change(i); }; 
+       document.getElementById('zzz-'+pic_id).onclick = function(){ change(i); };  
+      //  document.getElementById(zzz_btn_id).onclick = function(){ change(i); }; 
+      //  document.getElementById(zzz_pic_id).onclick = function(){ change(i); };  
       
     }
       
