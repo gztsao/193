@@ -23,7 +23,18 @@ let ary = [
     poster:'./img/github_logo.svg',
     url:'https://github.com/', 
     }, 
-/**
+    {title:'台新銀行網路銀行',
+    kind:'金融',
+    poster:'./img/taishin_logo.svg',
+    url:'https://my.taishinbank.com.tw/', 
+    }, 
+    {title:'SpeedTest網路測速',
+    kind:'偵錯',
+    poster:'./img/speedtest_logo.png',
+    url:'https://www.speedtest.net/', 
+    },
+
+ /**
  * ary[] 單一資料欄位功能說明。
  *  {title:'Gmail', //欄位
  *   kind:'應用類',     //登記年度

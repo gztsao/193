@@ -52,7 +52,7 @@ display:none;  //不顯示畫面
     width: 200px;
   }
 #thumb{
-  display:none;  //不顯示畫面
+  /* display:none;  //不顯示畫面 */
 } 
 
   .thumb-Btn {
