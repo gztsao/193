@@ -100,7 +100,7 @@ let ary = [
 //bookmark 雲端書籤html格式產生的方式
 // bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>' + '<br></br>'; 
 // bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button></div>'; 
-bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url.old" href="#" target="_blank" >前往外點</a></div>'; 
+bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
 
 
       //依照陣列的ID[0,1,...-到最後一筆]產生生成相對應的縮圖
@@ -118,7 +118,7 @@ bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" cl
 
     //bookmark測試區
     document.getElementById("main").innerHTML = bookmark;
-    // console.log(bookmark);
+    console.log(bookmark);
     //依照陣列的ID(main)產生生成相對應html
 
     // (2) 定義按鈕的事件
