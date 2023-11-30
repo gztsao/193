@@ -108,7 +108,7 @@ let ary = [
 // bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url' + i + '"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
 // bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<a id="url' + i + '"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
 // bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<button class="kindBtn" id="kind-btn' + i + '">' + s_kind + '</button>' + '<a id="url' + i + '"'+ i +' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
-bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<button class="kindBtn" id="kind-btn' + i + '">' + s_kind + '</button>' + '<a class="urlA" id="url-a' + i + ' href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
+bookmark = bookmark + '<div class="bookmark-item"><img src="' + s_poster + '" class="thumb-Btn" id="main-pic' + i + '">' + '<button class="contentBtn" id="main-btn' + i + '">' + s_title + '</button>' + '<button class="kindBtn" id="kind-btn' + i + '">' + s_kind + '</button>' + '<a class="urlA" id="url-a' + i + '" href="'+ s_url +'" target="_blank" >前往外點</a></div>'; 
 
       //依照陣列的ID[0,1,...-到最後一筆]產生生成相對應的縮圖
       // 產生每一個按鈕的html格式
