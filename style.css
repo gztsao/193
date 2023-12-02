@@ -7,14 +7,14 @@ a {
 }
 a:hover {
   /* 滑鼠移動與動畫效果 */
-  /* border: 3px solid red; */
+  /* border: 1px solid red; */
   /* 完全不透明 */
   opacity: 1.0;
 }
 /* 圖片特效 */
 img:hover {
   /* 滑鼠移動與動畫效果 */
-  /* border: 3px solid red; */
+  border: 1px solid red;
   /* 完全不透明 */
   opacity: 1.0;
 }
