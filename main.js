@@ -16,6 +16,12 @@ let aryOld = [
     url:'https://gmail.google.com',
     notes: 'none',  },
 
+    {title:'Google翻譯',
+    kind:'應用',
+    poster:'./img/google_translate.svg',
+    url:'https://translate.google.com/',
+    notes: 'none',  },
+
     {title:'YouTube',
     kind:'應用',
     poster:'./img/youtube_logo.svg',
@@ -100,10 +106,52 @@ let aryOld = [
     url:'https://www.google.com/alerts/',
     notes: 'none',  },
 
+    {title:'Google趨勢',
+    kind:'應用',
+    poster:'./img/google_trends.png',
+    url:'https://trends.google.com/',
+    notes: 'none',  },
+
+    {title:'Google財經',
+    kind:'應用',
+    poster:'./img/google_finance.png',
+    url:'https://www.google.com/finance/',
+    notes: 'none',  },
+
     {title:'Google帳戶',
     kind:'應用',
     poster:'./img/google_accoutn.svg',
     url:'https://www.google.com/accounts/ManageAccount?hl=zh-TW',
+    notes: 'none',  },
+
+    {title:'Google伺服器狀態',
+    kind:'應用',
+    poster:'./img/google_workspace.svg',
+    url:'https://www.google.com/appsstatus/',
+    notes: 'none',  },
+
+    {title:'遠雄人壽',
+    kind:'應用',
+    poster:'./img/farglorylife.jpg',
+    url:'https://www.fglife.com.tw/',
+    notes: 'none',  },
+
+    {title:'富揚資訊',
+    kind:'應用',
+    poster:'./img/adcom.jpg',
+    url:'https://www.adcom.com.tw/',
+    notes: 'none',  },
+
+    {title:'bitwarden密碼庫',
+    kind:'應用',
+    poster:'./img/bitwarden.png',
+    url:'https://vault.bitwarden.com/',
+    notes: '網頁版密碼庫',  },
+
+    {title:'Facebook',
+    kind:'應用',
+    poster:'./img/facebook.svg',
+    url:'https://www.facebook.com/',
     notes: 'none',  },
 
     {title:'GitHub',
@@ -123,6 +171,12 @@ let aryOld = [
     poster:'./img/speedtest_logo.png',
     url:'https://www.speedtest.net/',
     notes: 'none',   },
+
+    {title:'IP地圖',
+    kind:'偵錯',
+    poster:'./img/ipaddress.png',
+    url:'https://www.ipaddress.com/',
+    notes: '顯示你的IP與目前位置',   }
 
  ];
 

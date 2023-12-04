@@ -19,7 +19,7 @@ img:hover {
   opacity: 1.0;
 }
 
-/* 按鈕大框 */
+/* 按鈕大框目前已經display:none 不顯示 */
 #content{
   /* bd-按鈕大框*/
   border: 1px solid #ccc;
