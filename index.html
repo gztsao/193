@@ -14,7 +14,7 @@
 <!-- 重點:由資料main.js檔案內的ary[]推動產生網頁 -->
 <!-- 依照陣列[ary]內有的圖片網址的網址產生大圖與縮圖 -->
 <!-- 依照陣列的長度產生按鈕 -->
-    <!-- 按鈕 -->
+    <!-- 大圖包框按鈕(目前不顯示中 css > display:none) -->
     <div id="content"></div>
 
     <!-- 大圖, url -->
@@ -24,7 +24,10 @@
     
     <!--url功能已由大圖取代預計移除20231128  -->
     <a id="url.old" href="#" target="_blank" >前往 >> </a>
-    
+
+    <!-- 縮圖 -->
+    <div id="thumb"></div>
+
     <!--書籤分類過濾預設不過濾 20231204測試 onchange=""選單改變 -->
     <select class="dropdown" id="mySelect" onchange="mySelectFunction()" name="書籤分類">
         <option value="全選" selected>分類全選</option>
@@ -37,8 +40,7 @@
     <!-- 新按鈕測試 20231130測試成功-->
     <div id="main"></div>
     
-    <!-- 縮圖 -->
-    <div id="thumb"></div>
+
 
     <!-- 載入JS -->
     <script src="main.js"></script>
