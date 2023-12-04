@@ -30,7 +30,7 @@ let aryOld = [
 
     {title:'Google時間軸',
     kind:'應用',
-    poster:'./img/',
+    poster:'./img/google_map.svg',
     url:'https://timeline.google.com/',
     notes: 'none',  },
 
