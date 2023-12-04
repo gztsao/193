@@ -154,6 +154,18 @@ let aryOld = [
     url:'https://www.facebook.com/',
     notes: 'none',  },
 
+    {title:'Yahoo奇摩',
+    kind:'應用',
+    poster:'./img/yahoo.svg',
+    url:'https://tw.yahoo.com/',
+    notes: 'none',  },
+
+    {title:'Yahoo新聞',
+    kind:'應用',
+    poster:'./img/yahoo_news.svg',
+    url:'https://tw.news.yahoo.com/',
+    notes: 'none',  },
+
     {title:'GitHub',
     kind:'教學',
     poster:'./img/github_logo.svg',
