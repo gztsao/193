@@ -28,6 +28,12 @@ let aryOld = [
     url:'https://www.google.com/calendar/',
     notes: 'none',  },
 
+    {title:'Google時間軸',
+    kind:'應用',
+    poster:'./img/',
+    url:'https://timeline.google.com/',
+    notes: 'none',  },
+
     {title:'Google帳戶',
     kind:'應用',
     poster:'./img/google_accoutn.svg',
