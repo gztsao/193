@@ -14,7 +14,7 @@ a:hover {
 /* 圖片特效 */
 img:hover {
   /* 滑鼠移動與動畫效果 */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* 完全不透明 */
   opacity: 1.0;
 }
@@ -31,7 +31,12 @@ img:hover {
 /* 不顯示畫面 */
   display:none;  
 }
-
+/* 下拉選單 */
+.dropdown{
+  margin: 5px;
+  font-size: 16px;
+  /* font-weight: 600; */
+}
 /* 書籤個別按鈕 */
 .contentBtn{
   /* 寬度最寬300px適合手機 */
