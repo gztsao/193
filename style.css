@@ -31,6 +31,7 @@ img:hover {
 /* 不顯示畫面 */
   display:none;  
 }
+
 /* 書籤個別按鈕 */
 .contentBtn{
   /* 寬度最寬300px適合手機 */
@@ -64,11 +65,7 @@ img:hover {
 }
 #pic {
     width: 200px;
-<<<<<<< Updated upstream
     /* height: 300px; */
-=======
-    border: 3px solid ;
->>>>>>> Stashed changes
   }
 
 /* 縮圖按鈕   */
