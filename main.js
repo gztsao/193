@@ -34,6 +34,18 @@ let aryOld = [
     url:'https://timeline.google.com/',
     notes: 'none',  },
 
+    {title:'Google地圖',
+    kind:'應用',
+    poster:'./img/google_map.svg',
+    url:'https://www.google.com/maps/',
+    notes: 'none',  },
+
+    {title:'Google相簿',
+    kind:'應用',
+    poster:'./img/google_photo.svg',
+    url:'https://photos.google.com/',
+    notes: 'none',  },
+
     {title:'Google帳戶',
     kind:'應用',
     poster:'./img/google_accoutn.svg',
