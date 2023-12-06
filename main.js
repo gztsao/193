@@ -217,7 +217,7 @@ let aryOld = [
   
   //console.log("過濾後的陣列ary " + ary);
 
-  //測試將所有書籤過濾分類
+  //將所有書籤過濾分類
   function mySelectFunction(){
     let x = document.getElementById('mySelect').value;
     console.log("選到的分類為 " + x); //驗證下拉選單的值是否正確
@@ -240,6 +240,41 @@ let aryOld = [
     else { console.log("程式有錯才會出現此訊息");}
   }
 
+    //依關鍵字搜尋aryOld[]內容產生新的ary[]
+    function mySearchFunction(){
+      let search=document.getElementById("mySearch").value;
+      console.log("我的搜尋關鍵字.. " + search );
+      
+
+      // 關鍵字搜尋測試 ".indexOf" "toLowerCase()"
+      //filter = search.value.toUpperCase();
+      //if (txtValue.toUpperCase().indexOf(filter) > -1)
+      //成功>偵錯資料>> ary = aryOld.filter(e => e.kind =='偵錯' );
+      //成功>全部資料>> ary = aryOld.filter(e => e.title == 'XXX' || 'YYY' );
+      //成功>標題>IP地圖>>  ary = aryOld.filter(e => e.title =='IP地圖' );
+      //語法成功>結果失敗>全部出現> ary = aryOld.filter(e => e.title ='IP' );
+      
+      //filter = search.toUpperCase(); //將小寫字改為大寫
+      filter = search.toLowerCase(); //將大寫字改為小寫(建議使用)
+      //filter = search; //不改變大小寫
+      
+      console.log("我的搜尋關鍵字將大寫字改為小寫.. " + filter);
+
+      // console.log(e.title.indexOf(filter)); 
+      //語法錯誤 ary = aryOld.filter(e => e.title.indexOf(filter) < -1 );
+      //語法成功>結果失敗>全部出現>ary = aryOld.filter(e => e.title.indexOf(filter) >= -1 );
+      //語法成功>結果失敗>全部出現>ary = aryOld.filter(e => e.title.indexOf(filter) <= -1 );
+      //語法成功>結果失敗>0>ary = aryOld.filter(e => e.title.indexOf(filter) = -1 );
+      //有機會成功>出現一個字符合會出現>ary = aryOld.filter(e => e.title.indexOf(filter) != -1 );
+      //有機會成功(小寫環境)>大寫字無法搜尋>ary = aryOld.filter(e => e.title.indexOf(filter) != -1 );
+      // ary = aryOld.filter(e => e.title.indexOf(filter) != -1 );
+      // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) != -1 ); //方法1
+      // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
+      ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
+
+      console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
+      init();
+    }
 
   // 選擇的圖片的按鈕id btn_id[1,2,3...] 存入公用變數中將來可用
   let pic = '';  // 大圖網址

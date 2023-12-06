@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 我的最愛圖式路徑 -->
     <link rel="icon" type="image/png" href="./img/bookmark.png" />
-    <title>193</title>
+    <title>194</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -14,7 +14,7 @@
 <!-- 重點:由資料main.js檔案內的ary[]推動產生網頁 -->
 <!-- 依照陣列[ary]內有的圖片網址的網址產生大圖與縮圖 -->
 <!-- 依照陣列的長度產生按鈕 -->
-    <!-- 大圖包框按鈕(目前不顯示中 css > display:none) -->
+    <!-- 大圖包框按鈕(目前不顯示中20231206 css > display:none) -->
     <div id="content"></div>
 
     <!-- 大圖, url -->
@@ -27,12 +27,18 @@
 
     <!--書籤分類過濾預設不過濾 20231204測試 onchange=""選單改變 -->
     <select class="dropdown" id="mySelect" onchange="mySelectFunction()" name="書籤分類">
-        <option value="全選" selected>分類全選</option>
+        <option value="全選" selected>全選</option>
         <option value="應用">應用</option>
         <option value="教學">教學</option>
         <option value="金融">金融</option>
         <option value="偵錯">偵錯</option>
     </select>
+
+    <!-- 搜尋列功能 'onkeyup打一個字後馬上產生變化'-->
+    <form action="" class="search">
+        <input type="text" id="mySearch" placeholder="搜尋此網頁內容…" onkeyup="mySearchFunction()">
+        </form>
+
 
     <!-- 縮圖 -->
     <div id="thumb"></div>
