@@ -172,6 +172,36 @@ let aryOld = [
     url:'https://github.com/',
     notes: 'none',   },
 
+    {title:'Figma',
+    kind:'教學',
+    poster:'./img/figma_logo.svg',
+    url:'https://www.figma.com/',
+    notes: '向量圖形編輯器和原型設計工具，主要基於網頁進行工作',   },
+
+    {title:'Figma老師分享案例',
+    kind:'教學',
+    poster:'./img/figma_share.png',
+    url:'https://www.figma.com/file/AVAQRNYRwrYryCJ71mbniE/%E5%AD%B8%E5%93%A1%E7%B7%B4%E7%BF%92%E3%80%81%E7%AF%84%E4%BE%8B%E5%8D%80?type=design&node-id=76-260&mode=design&t=kvdqn5j1RMEKV4VO-0',
+    notes: 'Figma老師分享案例',   },
+
+    {title:'網頁前端技術應用',
+    kind:'教學',
+    poster:'./img/gg.png',
+    url:'http://gg.gg/js202311',
+    notes: 'none',   },
+
+    {title:'CodePen',
+    kind:'教學',
+    poster:'./img/codepen_logo.svg',
+    url:'https://codepen.io/',
+    notes: 'none',   },
+
+    {title:'w3schools',
+    kind:'教學',
+    poster:'./img/w3schools_logo.svg',
+    url:'https://www.w3schools.com/',
+    notes: 'none',   },
+
     {title:'台新銀行網路銀行',
     kind:'金融',
     poster:'./img/taishin_logo.svg',
