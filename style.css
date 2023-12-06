@@ -70,23 +70,27 @@ border-radius:25px
   padding: 8px;
   gap: 4px;
   margin: 2px 2px 2px 2px;
+  border-radius: 15px;
 }
 .contentBtn:hover{
   background-color: #ccc;
 }
 /* 分類按鈕 */
 .kindBtn{
+  /* 不顯示畫面20231206 */
+  display:none;
   /* 寬度最寬300px適合手機 */
   width: 80px;
   /* max-width: 300px; */
   /* 高度50px與縮圖同高 */
   /* height: 50px;  */
   height: auto; 
-  font-size: 16px;
+  font-size: 116px;
   font-weight: 600;
   padding: 8px;
   gap: 4px;
   margin: 2px 2px 2px 2px;
+  border-radius: 5px;
 }
 #pic {
     width: 200px;
@@ -116,7 +120,7 @@ border-radius:25px
     border-radius: 5px;
   /* 寬度最寬300px適合手機 */
   /* width: 400px; */
-  max-width: 460px;
+  max-width: 310px;
   /* max-width: 300px; */
   /* 高度50px與縮圖同高 */
   /* height: 100px; */
