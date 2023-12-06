@@ -17,14 +17,6 @@
     <!-- 大圖包框按鈕(目前不顯示中20231206 css > display:none) -->
     <div id="content"></div>
 
-    <!-- 大圖, url -->
-    <!-- 範例<a id="url" href="#" title="圖片超連結"><img src="圖片網址" alt="測試圖片" border="0"></a> -->
-    <!-- <a id="url" href="#" target="_blank" ><p><img id="pic"></p></a> -->
-    <a id="url" href="#" target="_blank" ><img id="pic" border="0"></a>
-    
-    <!--url功能已由大圖取代預計移除20231128  -->
-    <a id="url.old" href="#" target="_blank" >前往 >> </a>
-
     <!--書籤分類過濾預設不過濾 20231204測試 onchange=""選單改變 -->
     <select class="dropdown" id="mySelect" onchange="mySelectFunction()" name="書籤分類">
         <option value="全選" selected>全選</option>
@@ -33,6 +25,16 @@
         <option value="金融">金融</option>
         <option value="偵錯">偵錯</option>
     </select>
+
+    <!-- 大圖, url -->
+    <!-- 範例<a id="url" href="#" title="圖片超連結"><img src="圖片網址" alt="測試圖片" border="0"></a> -->
+    <!-- <a id="url" href="#" target="_blank" ><p><img id="pic"></p></a> -->
+    <a id="url" href="#" target="_blank" ><img id="pic" border="0"></a>
+    
+    <!--url前往功能  -->
+    <a id="url.old" href="#" target="_blank" >前往 >> </a>
+
+
 
     <!-- 搜尋列功能 'onkeyup打一個字後馬上產生變化'-->
     <form action="" class="search">
