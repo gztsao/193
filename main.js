@@ -1,7 +1,8 @@
 
 // 這是陣列放網址圖片用使用ary[0]為預設圖片
-// 設定公用變數 (重要的資料)
+// 處理過的資料
 let ary=[];
+// 設定公用變數 (重要的資料)
 let aryOld = [
     
     {title:'Google',
@@ -201,6 +202,30 @@ let aryOld = [
     poster:'./img/w3schools_logo.svg',
     url:'https://www.w3schools.com/',
     notes: 'none',   },
+
+    {title:'Freepik',
+    kind:'教學',
+    poster:'./img/freepik_logo.svg',
+    url:'https://www.freepik.com',
+    notes: 'Freepik免費圖庫',   },
+
+    {title:'壽司CSS選擇器遊戲',
+    kind:'教學',
+    poster:'./img/flukeout.png',
+    url:'https://flukeout.github.io/',
+    notes: 'CSS選擇器遊戲',   },
+
+    {title:'色碼表',
+    kind:'教學',
+    poster:'./img/ifreesite.png',
+    url:'https://www.ifreesite.com/color/web-color-code.htm',
+    notes: '適合所有人的顏色',   },
+
+    {title:'ColorReview',
+    kind:'教學',
+    poster:'./img/colorreview.png',
+    url:'https://color.review',
+    notes: '顏色中不同的對比判斷',   },
 
     {title:'台新銀行網路銀行',
     kind:'金融',
