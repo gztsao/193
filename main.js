@@ -243,7 +243,7 @@ let aryOld = [
     //依關鍵字搜尋aryOld[]內容產生新的ary[]
     function mySearchFunction(){
       let search=document.getElementById("mySearch").value;
-      console.log("我的搜尋關鍵字.. " + search );
+      // console.log("我的搜尋關鍵字.. " + search );
       
 
       // 關鍵字搜尋測試 ".indexOf" "toLowerCase()"
@@ -258,7 +258,7 @@ let aryOld = [
       filter = search.toLowerCase(); //將大寫字改為小寫(建議使用)
       //filter = search; //不改變大小寫
       
-      console.log("我的搜尋關鍵字將大寫字改為小寫.. " + filter);
+      // console.log("我的搜尋關鍵字將大寫字改為小寫.. " + filter);
 
       // console.log(e.title.indexOf(filter)); 
       //語法錯誤 ary = aryOld.filter(e => e.title.indexOf(filter) < -1 );
@@ -272,7 +272,7 @@ let aryOld = [
       // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
       ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
 
-      console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
+      // console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
       init();
     }
 
