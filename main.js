@@ -167,6 +167,12 @@ let aryOld = [
     url:'https://tw.news.yahoo.com/',
     notes: 'none',  },
 
+    {title:'資安月報',
+    kind:'應用',
+    poster:'./img/ithome_news.png',
+    url:'https://www.ithome.com.tw/tags/%E8%B3%87%E5%AE%89%E6%9C%88%E5%A0%B1',
+    notes: '資安月報',  },
+
     {title:'GitHub',
     kind:'教學',
     poster:'./img/github_logo.svg',
@@ -239,6 +245,12 @@ let aryOld = [
     url:'https://civitai.com/',
     notes: 'AI生成圖片人像漫畫類',   },
 
+    {title:'tensor AI生圖漫畫',
+    kind:'教學',
+    poster:'./img/tensor.png',
+    url:'https://tensor.art/',
+    notes: 'AI生成圖片人像漫畫類',   },
+
     {title:'CanIuse',
     kind:'教學',
     poster:'./img/caniuse.png',
@@ -275,11 +287,17 @@ let aryOld = [
     url:'https://html5up.net/',
     notes: '下載漂亮的 HTML5 網站模板',   },
 
-    {title:'statcounter瀏覽器使用率統計',
+    {title:'各年度Top30最受歡迎的JS',
     kind:'教學',
-    poster:'./img/statcounter.png',
-    url:'https://gs.statcounter.com/',
-    notes: '瀏覽器總類與螢幕大小使用統計',   },
+    poster:'./img/jqueryscript.png',
+    url:'https://www.jqueryscript.net/popular/2023.html',
+    notes: '各年度Top30最受歡迎的JS',   },
+
+    {title:'bestjquery最受歡迎的JS',
+    kind:'教學',
+    poster:'./img/bestjquery.png',
+    url:'https://www.bestjquery.com/',
+    notes: '最受歡迎的JS',   },
 
     {title:'壽司CSS選擇器遊戲',
     kind:'教學',
@@ -313,11 +331,23 @@ let aryOld = [
     url:'https://www.mega-payment.com/',
     notes: '繳款編號 51125120224426 台銀活儲 046004675754',   },
 
+    {title:'永豐信用卡繳費網',
+    kind:'金融',
+    poster:'./img/sinopac_logo.svg',
+    url:'https://paybill.sinopac.com/',
+    notes: '台銀活儲 046004675754',   },
+
     {title:'台新銀行網路銀行',
     kind:'金融',
     poster:'./img/taishin_logo.svg',
     url:'https://my.taishinbank.com.tw/',
     notes: '台新薪資帳戶 2017-10-0030968-7',   },
+
+    {title:'勞保局e化服務系統',
+    kind:'金融',
+    poster:'./img/bli.png',
+    url:'https://edesk.bli.gov.tw/',
+    notes: '查詢勞保',   },
 
     {title:'SpeedTest網路測速',
     kind:'偵錯',
@@ -329,8 +359,22 @@ let aryOld = [
     kind:'偵錯',
     poster:'./img/ipaddress.png',
     url:'https://www.ipaddress.com/',
-    notes: '顯示你的IP與目前位置',   }
+    notes: '顯示你的IP與目前位置',   },
 
+    {title:'showip',
+    kind:'偵錯',
+    poster:'./img/showip.png',
+    url:'https://showip.net/',
+    notes: '顯示你的IP與目前位置',   },
+
+    {title:'測試您的 IPv6 連線',
+    kind:'偵錯',
+    poster:'./img/testipv6.png',
+    url:'https://test-ipv6.com/',
+    notes: '可以偵測到IPV6',   },   
+
+
+    
  ];
 
  /**
