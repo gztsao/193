@@ -209,6 +209,12 @@ let aryOld = [
     url:'https://www.w3schools.com/',
     notes: 'none',   },
 
+    {title:'gamma AI報告',
+    kind:'教學',
+    poster:'./img/gamma_logo.png',
+    url:'https://gamma.app/',
+    notes: 'AI生成pdf或ppt報告',   },
+
     {title:'CanIuse',
     kind:'教學',
     poster:'./img/caniuse.png',
