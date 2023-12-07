@@ -275,6 +275,12 @@ let aryOld = [
     url:'https://fakeimg.pl/',
     notes: '就是假圖300x300方便好用的假圖產生器',   },
 
+    {title:'CSS搖動',
+    kind:'教學',
+    poster:'./img/csshake.png',
+    url:'https://elrumordelaluz.github.io/csshake/',
+    notes: 'CSS搖動',   },
+
     {title:'ui-buttons按鈕設計',
     kind:'教學',
     poster:'./img/uibuttons.png',
