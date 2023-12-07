@@ -209,11 +209,35 @@ let aryOld = [
     url:'https://www.w3schools.com/',
     notes: 'none',   },
 
+    {title:'AI tree 尋找AI工具',
+    kind:'教學',
+    poster:'./img/aitree.png',
+    url:'https://aitree.io/',
+    notes: 'AI工具分類與報告',   },
+
     {title:'gamma AI報告',
     kind:'教學',
     poster:'./img/gamma_logo.png',
     url:'https://gamma.app/',
     notes: 'AI生成pdf或ppt報告',   },
+
+    {title:'Leonardo AI生圖人像漫畫',
+    kind:'教學',
+    poster:'./img/leonardo_logo.svg',
+    url:'https://app.leonardo.ai/',
+    notes: 'AI生成圖片人像漫畫類',   },
+
+    {title:'Lexica AI生圖人像漫畫',
+    kind:'教學',
+    poster:'./img/lexica_logo.png',
+    url:'https://lexica.art/',
+    notes: 'AI生成圖片人像漫畫類',   },
+
+    {title:'civitai AI生圖漫畫',
+    kind:'教學',
+    poster:'./img/civitai.png',
+    url:'https://civitai.com/',
+    notes: 'AI生成圖片人像漫畫類',   },
 
     {title:'CanIuse',
     kind:'教學',
