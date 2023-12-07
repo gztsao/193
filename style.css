@@ -103,16 +103,17 @@ border-radius:25px
   .thumb-Btn {
     width: 50px;
     height: 50px;
-    border: 3px solid #AAAAAA;
+    border: 2px solid #AAAAAA;
     cursor: pointer;
     /* 透明度0.2-0.5 */
     opacity: 0.5;
     /* CSS 動畫轉場 增加框線  */
     transition: border 2s, opacity 1s;
     /* transition: border 1s, opacity 0.3s; */
+    border-radius: 10px;
   }
   .thumb-Btn:hover {
-    border: 3px solid red;
+    border: 2px solid red;
   /* 完全不透明 */
     opacity: 1.0;
   }
