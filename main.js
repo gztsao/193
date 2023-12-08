@@ -446,7 +446,7 @@ let aryOld = [
       //語法成功>結果失敗>全部出現> ary = aryOld.filter(e => e.title ='IP' );
       
       //filter = search.toUpperCase(); //將小寫字改為大寫
-      filter = search.toLowerCase(); //將大寫字改為小寫(建議使用)
+      filter = search.toLowerCase(); //將大寫字改為小寫(預設小寫建議使用)
       //filter = search; //不改變大小寫
       
       // console.log("我的搜尋關鍵字將大寫字改為小寫.. " + filter);
