@@ -112,7 +112,7 @@ border-radius:25px
     /* transition: border 1s, opacity 0.3s; */
     border-radius: 10px;
     /* 縮圖間隔 */
-    margin: 3px;
+    margin: 3px; 
   }
   .thumb-Btn:hover {
     border: 2px solid red;

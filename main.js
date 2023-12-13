@@ -399,6 +399,7 @@ let aryOld = [
 
 
   // 這面這行就是告訴電腦我想要怎麼過濾aryOld[陣列]
+  /* 過濾條件 function filter()  */
   /* 過濾條件 "偵錯" '教學' '應用' '金融' 字串完全相同只有一字不行  */
   /* 可以用 != 不等於  == 全等 &&(and) ||(or) 全不是 */
   /* 可用範例 " e.kind == '偵錯' || e.kind =='應用' " 結果會出現偵錯與應用 */
@@ -461,7 +462,8 @@ let aryOld = [
       // ary = aryOld.filter(e => e.title.indexOf(filter) != -1 );
       // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) != -1 ); //方法1
       // ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
-      ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 ); //方法2
+      //語法成功可以搜尋抬頭與註解// ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 || e.notes.toLowerCase().indexOf(filter) > -1); //新方法兩個過濾
+      ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 || e.notes.toLowerCase().indexOf(filter) > -1 || e.kind.toLowerCase().indexOf(filter) > -1); //新方法三個過濾
 
       // console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
       init();
@@ -474,9 +476,9 @@ let aryOld = [
   function change(idx) {
     // 依點選畫面i=1 or 2 or x 變化陣列位置[ary,0,1,2...5]傳入參數改變'大圖網址(pic)'與'網站網址(url)'
     let s_title  = ary[idx].title; //標題
-    let s_kind   = ary[idx].kind; //發行年度
-    let s_poster = ary[idx].poster; //圖片路經
-    let s_url = ary[idx].url; //說明網址
+    let s_kind   = ary[idx].kind; //網站分類
+    let s_poster = ary[idx].poster; //網站logo圖片路經
+    let s_url = ary[idx].url; //網站網址
     let s_notes = ary[idx].notes; //註解說明
     
     //陣列內容ary[0,1,..到最後一筆資料]為陣列資料分別存入變數pic與變數url中給程式使用
