@@ -465,12 +465,16 @@ let aryOld = [
       //語法成功可以搜尋抬頭與註解// ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 || e.notes.toLowerCase().indexOf(filter) > -1); //新方法兩個過濾
       ary = aryOld.filter(e => e.title.toLowerCase().indexOf(filter) > -1 || e.notes.toLowerCase().indexOf(filter) > -1 || e.kind.toLowerCase().indexOf(filter) > -1); //新方法三個過濾
 
+      /*****測試要將按鈕恢復為全選（預設值）不然畫面怪怪的可能已經分類為金融*/
+      // console.log("目前搜尋下拉選擇鈕值為 " + document.getElementById('mySelect').value);
+      document.getElementById('mySelect').value = "全選" ;
+
       // console.log("我的搜尋關鍵字產生的新陣列.. " + ary );
       init();
     }
 
   // 選擇的圖片的按鈕id btn_id[1,2,3...] 存入公用變數中將來可用
-  let pic = '';  // 大圖網址
+  let pic = '';  //網站logo圖片路經// 大圖網址
   
   // 定義各函式
   function change(idx) {
@@ -482,7 +486,7 @@ let aryOld = [
     let s_notes = ary[idx].notes; //註解說明
     
     //陣列內容ary[0,1,..到最後一筆資料]為陣列資料分別存入變數pic與變數url中給程式使用
-    pic = s_poster; //大圖網址
+    pic = s_poster; //網站logo圖片路經//大圖網址
     url = s_url; //網站網址
      console.log('陣列位置 ' + idx); //陣列位置
      console.log('大圖網址 ' + pic); //大圖網址
@@ -491,6 +495,8 @@ let aryOld = [
     render(); //進入產生大圖函數
   }
   
+
+  // 依按鈕圖示產生不同的變化預設為arry[0]
   function render() { //傳入變數'pic'與'url'產生1.大圖 與 2.點選後前往的網址
     // 條件為id="pic"的位置更新大圖ary[idx].poster(大圖網址)畫面
     document.getElementById('pic').src = pic;
@@ -500,6 +506,23 @@ let aryOld = [
 
     // 條件為id="url.old"的位置更新網站網址
     document.getElementById('url.old').href = url;
+
+    // 條件為id="qrcode"的位置更新網站網址並產生 QR code "變數rul"
+    // let QRcode = "https://www.google.com"; //無效ans."eferenceError: Can't find variable: QRCode"
+    document.getElementById('qrcode').innerHTML = ""; //先將qrcode清空下一行產生新qrcode
+    
+    //new QRCode(document.getElementById('qrcode'), url ); //方法1
+    let qrcode = new QRCode(document.getElementById("qrcode"), { //方法2
+      text: url,//將網址放入參數中
+      width: 128,
+      height: 128,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.Q //容错级别//由低到高 .L M Q H
+    });
+
+    
+
   }
   
   function init() {
