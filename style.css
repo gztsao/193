@@ -140,3 +140,8 @@ border-radius:25px
   justify-content: center;   /*//置中 */
   align-items: center;  /*//副軸置中 */
   }
+  /* QR Code id格式*/
+  #qrcode{
+    padding: 50px;
+    /* margin: 50px; */
+  }

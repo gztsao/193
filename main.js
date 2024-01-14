@@ -379,6 +379,47 @@ let aryOld = [
     url:'https://test-ipv6.com/',
     notes: '可以偵測到IPV6',   },   
 
+    {title:'GitHub 192-0955',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/192/0955123221.html',
+    notes: '',   },
+
+    {title:'GitHub 192',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/192/',
+    notes: '',   },
+
+    {title:'GitHub 193-0955',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/193/0955123221.html',
+    notes: '',   },
+
+    {title:'GitHub 193',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/193/',
+    notes: '',   },
+
+    {title:'GitHub 194-0955',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/194/0955123221.html',
+    notes: '',   },
+
+    {title:'GitHub 194',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/194/',
+    notes: '',   },
+
+    {title:'GitHub ch15',
+    kind:'偵錯',
+    poster:'./img/github_desktop.svg',
+    url:'https://gztsao.github.io/ch15/',
+    notes: '',   },
 
     
  ];
@@ -510,7 +551,10 @@ let aryOld = [
     // 條件為id="qrcode"的位置更新網站網址並產生 QR code "變數rul"
     // let QRcode = "https://www.google.com"; //無效ans."eferenceError: Can't find variable: QRCode"
     document.getElementById('qrcode').innerHTML = ""; //先將qrcode清空下一行產生新qrcode
-    
+
+    console.log("QRCode網址為 >> " +url);
+    document.getElementById('qrcode_text').innerHTML = "<p>QRCode網址為 >> " + url + "</p>";        
+
     //new QRCode(document.getElementById('qrcode'), url ); //方法1
     let qrcode = new QRCode(document.getElementById("qrcode"), { //方法2
       text: url,//將網址放入參數中
