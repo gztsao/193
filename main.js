@@ -5,7 +5,13 @@ let ary=[];
 // 設定公用變數 (重要的資料)
 let aryOld = [
     
-    {title:'Google',
+  {title:'ChatGPT',
+    kind:'應用',
+    poster:'./img/chatgpt_logo.svg',
+    url:'https://chatgpt.com/',
+    notes: 'none',  },
+
+  {title:'Google',
     kind:'應用',
     poster:'./img/google_logo.svg',
     url:'https://www.google.com',
@@ -131,13 +137,13 @@ let aryOld = [
     url:'https://www.google.com/appsstatus/',
     notes: 'none',  },
 
-    {title:'遠雄人壽',
+    {title:'遠雄人壽 fglife',
     kind:'應用',
     poster:'./img/farglorylife.jpg',
     url:'https://www.fglife.com.tw/',
     notes: 'none',  },
 
-    {title:'富揚資訊',
+    {title:'富揚資訊 ADcom',
     kind:'應用',
     poster:'./img/adcom.jpg',
     url:'https://www.adcom.com.tw/',
@@ -167,7 +173,7 @@ let aryOld = [
     url:'https://tw.news.yahoo.com/',
     notes: 'none',  },
 
-    {title:'資安月報',
+    {title:'資安月報 ithome',
     kind:'應用',
     poster:'./img/ithome_news.png',
     url:'https://www.ithome.com.tw/tags/%E8%B3%87%E5%AE%89%E6%9C%88%E5%A0%B1',
@@ -197,7 +203,7 @@ let aryOld = [
     url:'https://www.figma.com/file/AVAQRNYRwrYryCJ71mbniE/%E5%AD%B8%E5%93%A1%E7%B7%B4%E7%BF%92%E3%80%81%E7%AF%84%E4%BE%8B%E5%8D%80?type=design&node-id=76-260&mode=design&t=kvdqn5j1RMEKV4VO-0',
     notes: 'Figma老師分享案例',   },
 
-    {title:'網頁前端技術應用',
+    {title:'網頁前端技術應用gg',
     kind:'教學',
     poster:'./img/gg.png',
     url:'http://gg.gg/js202311',
@@ -325,31 +331,31 @@ let aryOld = [
 
 
     
-    {title:'台灣銀行網路銀行',
+    {title:'台灣銀行網路銀行 bot',
     kind:'金融',
     poster:'./img/bot_logo.svg',
     url:'https://ebank.bot.com.tw/',
     notes: '台銀活儲 046004675754',   },
 
-    {title:'兆豐信用卡e化繳費平台',
+    {title:'兆豐信用卡e化繳費平台 megabank',
     kind:'金融',
     poster:'./img/megabank.svg',
     url:'https://www.mega-payment.com/',
     notes: '繳款編號 51125120224426 台銀活儲 046004675754',   },
 
-    {title:'永豐信用卡繳費網',
+    {title:'永豐信用卡繳費網 sinopac',
     kind:'金融',
     poster:'./img/sinopac_logo.svg',
     url:'https://paybill.sinopac.com/',
     notes: '台銀活儲 046004675754',   },
 
-    {title:'台新銀行網路銀行',
+    {title:'台新銀行網路銀行 taishin',
     kind:'金融',
     poster:'./img/taishin_logo.svg',
     url:'https://my.taishinbank.com.tw/',
     notes: '台新薪資帳戶 2017-10-0030968-7',   },
 
-    {title:'勞保局e化服務系統',
+    {title:'勞保局e化服務系統 bli',
     kind:'金融',
     poster:'./img/bli.png',
     url:'https://edesk.bli.gov.tw/',
