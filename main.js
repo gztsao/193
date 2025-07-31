@@ -179,6 +179,12 @@ let aryOld = [
     url:'https://www.ithome.com.tw/tags/%E8%B3%87%E5%AE%89%E6%9C%88%E5%A0%B1',
     notes: '資安月報',  },
 
+    {title:'MoonTv',
+      kind:'應用',
+      poster:'./img/moontv.png',
+      url:'https://tv.gztsao.dpdns.org/',
+      notes: 'MoonTv 線上串流平台',  },
+
     {title:'GitHub',
     kind:'教學',
     poster:'./img/github_logo.svg',
