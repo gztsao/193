@@ -9,7 +9,19 @@ let aryOld = [
     kind:'應用',
     poster:'./img/chatgpt_logo.svg',
     url:'https://chatgpt.com/',
-    notes: 'none',  },
+    notes: 'AI',  },
+
+  {title:'Gemini',
+    kind:'應用',
+    poster:'./img/gemini_logo.svg',
+    url:'https://gemini.google.com/',
+    notes: 'Google AI',  },
+
+  {title:'Copilot',
+    kind:'應用',
+    poster:'./img/copilot_logo.svg',
+    url:'https://copilot.microsoft.com/',
+    notes: 'MS AI',  },
 
   {title:'Google',
     kind:'應用',
